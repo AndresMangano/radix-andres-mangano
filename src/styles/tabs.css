@@ -1,0 +1,30 @@
+div.tabs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1.5em 0;
+}
+
+div.tabs > button {
+    margin: 0.2em;
+    transition: color .2s ease-out;
+}
+div.tabs > button:hover {
+    color: var(--primary);
+}
+
+button.pills {
+    color: var(--white);
+    background: var(  --secondary);
+    padding: 0.5em 1em;
+    cursor: pointer;
+    border-radius: 1.5em;
+    font-weight: bold;
+    background: var(--dark);
+    border: 2px solid var(--light-dark);
+}
+
+button.pills.active {
+    background-color: var(--light-dark);
+    border-bottom-color: var(--primary);
+}

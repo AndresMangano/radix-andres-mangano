@@ -1,0 +1,70 @@
+form {
+    display: flex;
+    flex-direction: column;
+    width: min-content;
+}
+
+form label {
+    color: var(--white);
+    text-align: left;
+    margin-bottom: 0.15em;
+}
+
+form > div {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: flex-start;
+    margin-bottom: .5em;
+}
+
+form > div > label {
+    border: 2px solid var(--black);
+    text-align: right;
+    background-color: var(--light-dark);
+    min-width: 10em;
+    max-width: 10em;
+    font-size: 1em;
+    padding: .5em 1em;
+    font-weight: bold;
+    margin: 0;
+}
+
+input, select, form > div > span {
+    border-radius: .4em;
+    border: 2px solid var(--light-dark);
+    padding: .5em 2em;
+    font-size: 1em;
+    outline: none;
+    background: var(--white);
+    color: var(--black);
+    outline: none;
+}
+
+form > div > span {
+    color: var(--primary);
+    background-color: var(--dark);
+    min-width: 10em;
+}
+
+form footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 2em;
+}
+
+input[type='email'], input[type='password'], input[type='text'] {
+    min-width: 14em;
+}
+
+input[type='number'] {
+    width: 7em;
+}
+input[type='date'] {
+    min-width: 8em
+}
+
+select {
+    min-width: 18em;
+}

@@ -1,0 +1,71 @@
+table {
+    color: var(--white);
+    border-spacing: 0;
+    min-width: 32em;
+    white-space: nowrap;
+    margin-bottom: 1em;
+}
+
+table tr > th {
+    border: 1.5px solid var(--light-dark);
+    text-align: center;
+    padding: 0.5em;
+    background-color: var(--dark)
+}
+
+table > thead > tr:first-child   > th:first-child {
+    color: var(--primary);
+}
+
+table tr > td {
+    border: 1.5px solid var(--light-dark);
+    padding: 0.5em;
+    text-align: center;
+}
+
+table > tbody th:first-child {
+    color: var(--primary);
+}
+
+table > tbody > tr > td:first-child > a {
+    color: var(--primary);
+    font-weight: bold;
+}
+
+table > tbody > tr > td:first-child {
+    width: 1em;
+    background-color: var(--dark);
+    color: var(--primary);
+}
+
+table label {
+    padding-right: 0.5em;
+}
+
+table input[type='date'] {
+   margin-top: 0.7em;
+}
+
+table .action-column {
+    width: 1em;
+}
+
+table tbody button {
+    padding: 0 .3em;
+    border: none;
+    background: transparent;
+    color: var(--white);
+}
+
+table tbody button:hover {
+    background: none;
+    color: var(--white);
+}
+
+svg[data-icon='trash-alt'] {
+    color: var(--danger);
+}
+
+table tbody tr.highlighted {
+    color: var(--success);
+}

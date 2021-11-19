@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('./styles/sidebar.css');
+@import url('./styles/navbar.css');
+@import url('./styles/form.css');
+@import url('./styles/table.css');
+@import url('./styles/view-header.css');
+@import url('./styles/button.css');
+@import url('./styles/card.css');
+@import url('./styles/tabs.css');
+@import url('./styles/tooltip.css');
+@import url('./styles/aside.css');
+
+:root {
+    --black: #0f171f;
+    --dark: #1c2938;
+    --light-dark: #2d435c;
+    --primary: #ffba42;
+    --secondary: #429aff;
+    --danger: #ff5b42;
+    --success: #42ffa7;
+    --warning: #ff8a42;
+    --white: #F1F2F3;
+}
+
+#root {
+    min-height: 100vh;
+    font-size: .9rem;
+}
+
+* {
+    font-family: 'Nunito', sans-serif;
+}
+h1, h2, h3, h4, h5, h6, p, ol {
+    color: var(--white);
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondary);
+}
+
+body {
+    background-color: var(--dark);
+    min-height: 100vh;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+strong {
+    color: var(--primary);
+}
+
+input[type='radio'] { 
+    transform: scale(1.2); 
+}
+
+div.app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+div.main {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1;
+}
+
+div.main-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 1em 5em;
+    flex: 1 1;
+    background-color: var(--black);
+}
+
+div.main-panel > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+div.main-panel > div > div {
+    margin: 2em 5em;
+}
+
+div.main-panel > div > div:first-child {
+    max-width: 60%;
+}
+
+div.main-panel header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+div.main-panel section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

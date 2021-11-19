@@ -1,0 +1,14 @@
+aside {
+    position: sticky;
+    top: 5em;
+    border: 2px solid var(--secondary);
+    border-radius: 1em;
+    padding: 1em 1em;
+}
+aside li {
+    margin: .5em;
+}
+
+aside a:hover {
+    font-weight: bold;
+}

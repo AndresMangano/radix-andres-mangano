@@ -1,0 +1,31 @@
+button {
+    border: 1px solid var(--secondary);
+    outline: none;
+    color: var(--secondary);
+    background: var(--black);
+    padding: 0.8em 1.7em;
+    cursor: pointer;
+    border-radius: 0.5em;
+    font-weight: bold;
+    transition: color .3s ease-out;
+    transition: background-color .3s ease-out;
+}
+button:hover {
+    background-color: var(--secondary);
+    color: var(--black);
+}
+
+button.button-delete {
+    border: 1px solid var(--danger);
+    background: var(--black);
+    color: var(--danger);
+}
+button.button-delete:hover {
+    background-color: var(--danger);
+    color: var(--black)
+}
+
+button:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}

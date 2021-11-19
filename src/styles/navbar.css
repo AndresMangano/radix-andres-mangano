@@ -1,0 +1,72 @@
+nav.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--dark);
+    color: var(--white);
+    border-bottom: 1px solid var(--light-dark);
+}
+nav.navbar > *:first-child {
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--secondary);
+    padding: .3em 2em;
+}
+
+nav.navbar > *:first-child > span {
+    margin-left: 2em;
+    font-size: .3em !important;
+    color: var(--light-dark);
+}
+
+nav > ul > li > a {
+    display: block;
+    text-decoration: none;
+    color: var(--white);
+    padding-right: 1em;
+}
+
+nav span {
+    display: block;
+    color: var(--white);
+    padding-right: 1em;
+    margin-right: 0.7em;
+}
+
+nav > ul > li > ul {
+    right: 1.7em;
+    display: none;
+    position: absolute;
+    background-color: none;
+    width: 9.4em;
+    padding-top: 0.5em;
+    overflow: hidden;
+}
+
+nav > ul > li:hover ul {
+    display: block;
+}
+
+
+nav > ul > li > ul > li  {
+    width: 100%;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+nav > ul > li > ul > li > button {
+    background-color: var(--dark);
+    border: none;
+    color: white;
+    padding: 1.2em;
+    width: 100%;
+    text-align: center;
+    font-size: 1em;
+}
+
+nav > ul > li > ul > li > button:hover {
+    background-color: var(--light-dark);
+    border: 1px solid var(--black);
+    cursor: pointer;
+}

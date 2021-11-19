@@ -1,0 +1,41 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: min-content;
+}
+
+.card > div:first-child {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.7em;
+    border: 1.5px solid var(--light-dark);
+    background-color: var(--dark);
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+    border-bottom: none;
+}
+
+.card > div:last-child {
+    display: flex;
+    justify-content: center;
+}
+
+.card > div:last-child > span {
+    margin: 0 0.5em;
+}
+
+.card > div:last-child input[type=number] {
+    width: 0.7em !important;
+}
+
+.card > div:last-child input[type=number]::-webkit-inner-spin-button,
+        input[type=number]::-webkit-outer-spin-button { 
+            -webkit-appearance: none;
+}
+
+.card > div:last-child input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
